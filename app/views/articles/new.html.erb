@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="col-md-5 col-md-offset-3" id="form-sec">
+		<h1>Create a new Article</h1>
+		<%= form_for(@article) do |f| %>
+		<% @article.errors.full_messages.each do |error| %>
+		<p><%= error %></p>
+		<% end %>
+		<div class="form-group">
+			<%= f.label :title %>
+			<%= f.text_field :title, :class => 'form-control' %>
+		</div>
+		<div class="form-group">
+			<%= f.label :body %>
+			<%= f.text_area :body, :class => 'form-control' %>
+		</div>
+		<%= f.submit 'Submit', :class => 'btn btn-default' %>
+		<% end %>
+	</div>
+</div>
