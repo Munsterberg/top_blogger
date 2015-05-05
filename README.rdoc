@@ -1,7 +1,6 @@
-== README
+== Rails Blogger
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# How to get the application started
 
 Things you may want to cover:
 
