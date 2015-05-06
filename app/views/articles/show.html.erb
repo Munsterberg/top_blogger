@@ -1,6 +1,11 @@
 <div class="container">
 	<div class="main-sec">
 		<h1><%= @article.title %></h1>
+		<p>
+		<% if @article.image.exists? %>
+			<%= image_tag @article.image.url %>
+		<% end %>
+		</p>
 		<p><%= @article.body %></p>
 		<%= link_to 'Back to Articles', articles_path %>
 		<br><br>
