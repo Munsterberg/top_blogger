@@ -13,7 +13,7 @@
 		<p>
 			<% if @article.image.exists? %>
 				<%= image_tag @article.image.url %>
-			<% end %>	
+			<% end %>
 		</p>
 		<div class="form-group">
 			<%= f.label :image, "Attach an Image" %>
